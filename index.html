@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TumTum | Discover Manipur</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+    header { background: #2e8b57; color: white; padding: 30px; text-align: center; }
+    header h1 { margin: 0; }
+    section { padding: 20px; }
+    .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; }
+    .place { background: white; padding: 15px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    form input, form textarea { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #2e8b57; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; }
+    footer { text-align: center; padding: 20px; font-size: 14px; color: #777; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TumTum | Discover Manipur</h1>
+    <p>Your guide to the Jewel of Northeast India</p>
+  </header>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <!-- Photos sourced above -->
+    <img src="" alt="Manipur" id="img0">
+    <img src="" alt="Kangla Fort" id="img1">
+    <img src="" alt="Loktak Lake phumdis" id="img2">
+    <img src="" alt="Loktak Lake" id="img3">
+  </section>
+
+  <section>
+    <h2>About Manipur</h2>
+    <p>Manipur, a beautiful and culturally rich state in northeast India, is famous for Loktak Lake, Kangla Fort, Shirui Hill, vibrant dance forms, handloom crafts, and traditional foods like Eromba and Chakhao.</p>
+  </section>
+
+  <section>
+    <h2>Highlights</h2>
+    <div class="place">
+      <h3>🛶 Loktak Lake</h3>
+      <p>The largest freshwater lake in Northeast India, famous for its floating islands called phumdis. Keibul Lamjao National Park is the world's only floating national park. 2</p>
+    </div>
+    <div class="place">
+      <h3>🏰 Kangla Fort</h3>
+      <p>An ancient fort in Imphal, once the seat of Meitei kings. It’s a cultural and spiritual symbol of Manipuri identity. 3</p>
+    </div>
+    <div class="place">
+      <h3>🏞️ Shirui Hill & Shirui Lily</h3>
+      <p>Located in Ukhrul district, known for the rare Shirui Lily and scenic views.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Culture & Cuisine</h2>
+    <p>Manipur is home to traditional dances like Ras Leela, vibrant handloom textiles, and delicious food such as Eromba (vegetable mash) and Chakhao (black rice dessert). The state is a mosaic of over 30 tribes, each with unique traditions.</p>
+  </section>
+
+  <section>
+    <h2>Leave Your Thoughts</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="message" rows="4" placeholder="What do you like about Manipur?" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    Website by TumTum 🌟
+  </footer>
+
+  <script>
+    // Fill image URLs dynamically
+    const imgs = ["turn0image0", "turn0image1", "turn0image6", "turn0image8"];
+    imgs.forEach((id, i) => {
+      document.getElementById('img'+i).src = window.location.origin + "#" + id;
+    });
+  </script>
+
+</body>
+</html>
