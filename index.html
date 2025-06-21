@@ -60,9 +60,16 @@
   <section>
     <h2>Leave Your Thoughts</h2>
     <form action="https://formsubmit.co/luhenba902@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <textarea name="message" rows="4" placeholder="What do you like about Manipur?" required></textarea>
-      <button type="submit">Send Message</button>
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <textarea name="message" rows="4" placeholder="What do you like about Manipur?" required></textarea>
+
+  <!-- 🔽 Hidden inputs to disable captcha and redirect after submission -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://luhenba.github.io/YOUR-REPO-NAME/thanks.html">
+
+  <button type="submit">Send Message</button>
     </form>
   </section>
 
